@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <script src="./library.js" defer> </script>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="menu">
+            <h1>My library</h1>
+            <button id="addButton">Add book</button>
+
+            <div class="newbook">
+                <form name="newbook" id="newbook-form">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author">
+                    <label for="pages">Total Pages</label>
+                    <input type="number"  min="1" id="pages" name="pages">
+                    <label for="read">Have you read it?</label>
+                    <select id="read" name="read">
+                        <option value= "Read" >Yes</option>
+                        <option value= "Not Read" >Not yet</option>
+                    </select>
+                    <button id="add" type="button">Add</button>
+                    <button id="cancelButton" type="button">Close</button>
+                </form>
+            </div>
+            
+        </div>
+        <div id="library-container">
+            
+            <ul id="bookList">
+                <li>The library is empty. Click ADD Book to add new books to the APP. You can change the "read" status or remove books from the library by clicking the corresponding buttons.</p>
+            </ul>
+        </div>
+    </div>    
+</body>
+</html>

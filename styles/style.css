@@ -1,0 +1,65 @@
+body {
+    background-color: #3d2633;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    background-color: #EAE6EB;
+    padding: 1em;
+    margin: auto;
+}
+
+#menu {
+    width: 220px;
+    padding: 1em
+}
+
+#library-container {
+    width: 100%;
+    max-width: 600px;
+    font-size: 1.2em;
+    padding: 1em;
+}
+#newbook-form {
+    display: none;
+    margin-top: .5em;
+}
+.new-book {
+    align-self: center;
+}
+input, select {
+    width : 200px;
+    padding: 0;
+    margin: .5rem;
+    box-sizing: border-box;
+    display: block;
+}
+
+ul {
+    padding: 0
+}
+
+li {
+    margin: .4em;
+    padding: 1em;
+    list-style-type: none;
+    background-color: white;
+}
+li button {
+    margin: .2rem;
+    border-radius: 3px;
+    border: 0;
+    background-color: #EAE6EB;
+    color: #572933;
+    padding: .2rem;    
+    cursor: pointer;
+}
+
+@media screen and (max-width:700px) {
+    .container { 
+        flex-wrap: wrap;  
+    }
+
+}
